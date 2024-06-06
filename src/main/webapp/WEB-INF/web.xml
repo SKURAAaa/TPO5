@@ -4,33 +4,42 @@
          version="3.1">
 
     <servlet>
-        <servlet-name>VehicleServlet</servlet-name>
-        <servlet-class>org.example.tpo5_s25972.CarServlet</servlet-class>
+        <servlet-name>IndexServlet</servlet-name>
+        <servlet-class>org.example.tpo5_s25972.IndexServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>VehicleServlet</servlet-name>
-        <url-pattern>/car</url-pattern>
+        <servlet-name>IndexServlet</servlet-name>
+        <url-pattern>/index</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>SearchServlet</servlet-name>
-        <servlet-class>org.example.tpo5_s25972.SearchServlet</servlet-class>
+        <servlet-name>AutomobileServlet</servlet-name>
+        <servlet-class>org.example.tpo5_s25972.AutomobileServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>SearchServlet</servlet-name>
-        <url-pattern>/search</url-pattern>
+        <servlet-name>AutomobileServlet</servlet-name>
+        <url-pattern>/automobile</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>DisplayServlet</servlet-name>
-        <servlet-class>org.example.tpo5_s25972.DisplayServlet</servlet-class>
+        <servlet-name>FindServlet</servlet-name>
+        <servlet-class>org.example.tpo5_s25972.FindServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>DisplayServlet</servlet-name>
-        <url-pattern>/display</url-pattern>
+        <servlet-name>FindServlet</servlet-name>
+        <url-pattern>/find</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowServlet</servlet-name>
+        <servlet-class>org.example.tpo5_s25972.ShowServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowServlet</servlet-name>
+        <url-pattern>/show</url-pattern>
     </servlet-mapping>
 
     <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 </web-app>
